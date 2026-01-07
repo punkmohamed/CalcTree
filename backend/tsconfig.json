@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Target JavaScript version */
+    "target": "ES2020",
+    /* Module system */
+    "module": "CommonJS",
+    /* مسار المخرجات بعد التحويل */
+    "outDir": "./dist",
+    /* ملفات التعريف للـ Node.js و Express */
+    /* يسمح بالاستيراد بدون تحديد الامتداد */
+    "resolveJsonModule": true,
+    /* يخلق ملفات تعريف (.d.ts) */
+    "declaration": true,
+    /* يضمن فحص دقيق لنوع المتغيّرات */
+    "strict": true,
+    /* يسهل الاستيراد باستخدام المسارات المختصرة */
+    "baseUrl": ".",
+    "paths": {
+      "@models/*": ["src/models/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@routes/*": ["src/routes/*"]
+    },
+    /* للاستخدام مع CommonJS و ES Modules */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}
